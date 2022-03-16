@@ -1,5 +1,9 @@
 import styled from "styled-components"
-import { darkBackground, gray1, gray2, white, yellow } from "../../../styles/basic-styles"
+import { darkBackground, gray1, gray2, white, yellow, yellow07 } from "../../../styles/basic-styles"
+
+interface NavProps {
+  router: string
+}
 
 export const Header = styled.header`
   /* background-color: pink; */
@@ -27,15 +31,36 @@ export const Logo = styled.div`
   width: 130px;
   height: 53px;
 `
-export const Nav = styled.nav`
+export const Nav = styled.nav<NavProps>`
   height: 100%;
   display: flex;
   align-items: center;
   margin-left: 63px;
-  span:nth-child(2), span:nth-child(3), span:nth-child(4) {
-    margin-left: 32px;
+  a:nth-child(1) {
+    border-color: ${({ router }) => router === '/' ? `${yellow}` : `${gray2}`};
+    color: ${({ router }) => router === '/' ? `${white}` : `${gray1}`};
   }
-  span {
+
+  a:nth-child(2) {
+    margin-left: 32px;
+    border-color: ${({ router }) => router === '/projects' ? `${yellow}` : `${gray2}`};
+    color: ${({ router }) => router === '/projects' ? `${white}` : `${gray1}`};
+  }
+
+  a:nth-child(3) {
+    margin-left: 32px;
+    border-color: ${({ router }) => router === '/blog' ? `${yellow}` : `${gray2}`};
+    color: ${({ router }) => router === '/blog' ? `${white}` : `${gray1}`};
+  }
+
+  a:nth-child(4){
+    margin-left: 32px;
+    border-color: ${({ router }) => router === '/contact' ? `${yellow}` : `${gray2}`};
+    color: ${({ router }) => router === '/contact' ? `${white}` : `${gray1}`};
+  }
+
+  a {
+    transition: all ease 0.25s;
     width: 56px;
     height: 19px;
     font-family: 'Roboto';
@@ -44,16 +69,19 @@ export const Nav = styled.nav`
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    color: ${gray1};
     display: flex;
     align-items: center;
     justify-content: center;
     width: 75px;
-    border: solid ${gray2} 3px;
+    border: solid ${yellow} 3px;
     height: 107.9%;
     border-top: 0;
     border-right: 0;
     border-left: 0;
     border-radius: 3px;
+    :hover {
+      transition: all ease 0.25s;
+      color: ${white};
+    }
   }
 `

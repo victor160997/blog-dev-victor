@@ -1,10 +1,9 @@
 import MainLayout from "../components/MainLayout";
 
-export default function Projects() {
-
+export default function blog() {
   return (
     <MainLayout>
-      <h1>olalalandjha</h1>
+      <h1>BLOG</h1>
     </MainLayout>
   )
 }
