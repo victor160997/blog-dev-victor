@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { darkBackground, gray1, gray2, white, yellow, yellow07 } from "../../../styles/basic-styles"
+import { darkBackground, gray1, gray2, white, yellow, yellow07, tablet, mobile } from "../../../styles/basic-styles"
 
 interface NavProps {
   router: string
@@ -18,12 +18,20 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
+  ${mobile} {
+    display: none;
+  }
 `
 export const Content = styled.section`
   height: 100%;
   width: 1016px;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  /* background-color: red; */
+  ${tablet} {
+    width: 768px;
+  }
 `
 export const Logo = styled.div`
   background: url('/dev-victor.png');

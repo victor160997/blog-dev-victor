@@ -1,34 +1,20 @@
 import Head from "next/head"
-import Footer from "./Footer";
-import Header from "./Header";
-import { FC } from "react"
-
-import styled from "styled-components"
-
-export const MainContainer = styled.main`
-  /* background-color: red; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
-export const Content = styled.section`
-  /* background-color: blue; */
-  padding-top: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 1016px;
-`
+import Footer from "./Footer"
+import Header from "./Header"
+import { FC, useEffect, useState } from "react"
+import * as Style from './style'
+import HeaderMobile from "./HeaderMobile"
 
 const MainLayout: FC = ({ children }) => {
   return (
-    <MainContainer>
+    <Style.MainContainer>
       <Header />
-      <Content>
+      <HeaderMobile />
+      <Style.Content>
         {children}
-      </Content>
+      </Style.Content>
       <Footer />
-    </MainContainer>
+    </Style.MainContainer>
   )
 }
 
