@@ -1,77 +1,108 @@
 import styled from "styled-components"
-import { desktopEtablet, gray1, gray2, mobile, white, yellow } from "../../../styles/basic-styles"
+import { desktopEtablet, gray1, gray2, mobile, tablet, white, yellow } from "../../../styles/basic-styles"
+
+export const All = styled.section`
+  display: flex;
+  flex-direction: column;
+`
 
 export const MainFooter = styled.footer`
   border-top: solid ${gray2} 3px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
+  display: flex;
+  justify-content: center;
 `
 
 export const Rodape = styled.div`
-  /* width: 100vw; */
-  width: 100%;
-  height: 50px;
   border-top: solid ${gray2} 3px;
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding-left: 10px;
   div {
     width: 1016px;
     p {
-      color: white;
+      color: ${gray1};
+      margin-bottom: 5px;
       font-family: roboto;
       font-weight: 400;
-      font-size: 13px;
+      transition: all ease 0.25s;
+      margin: 15px 0;
+    }
+  }
+  ${tablet} {
+    div {
+      width: 768px;
+      margin-left: 10px;
     }
   }
 `
 
 export const Footer = styled.footer`
   width: 1016px;
-  height: fit-content;
-  background-color: transparent;
   display: flex;
-  flex-direction: row;
-  margin-top: 20px;
-
-  ${mobile} {
-    padding: 10px 0 10px 10px;
-    display: flex;
+  flex-direction: column;
+  ${tablet} {
+    width: 768px;
   }
 `
 export const Contents = styled.div`
-  margin-left: 30px;
-  width: 500px;
-  ${desktopEtablet} {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  display: flex;
+  margin-bottom: 20px;
   div {
-    margin-bottom: 15px;
-    h3 {
+    margin-right: 60px;
+    a {
       color: ${yellow};
       font-family: roboto;
-      margin-bottom: 5px;
+      font-weight: 900;
+      transition: all ease 0.25s;
+      :hover {
+        transition: all ease 0.25s;
+        text-decoration: underline;
+      }
     }
     p {
       color: ${gray1};
+      margin-bottom: 5px;
       font-family: roboto;
       font-weight: 400;
-      margin-bottom: 3px;
+      transition: all ease 0.25s;
+      :hover {
+        color: white;
+      }
+    }
+    p:nth-child(2) {
+      margin-top: 15px;
+    }
+  }
+  ${tablet} {
+    margin-left: 10px;
+  }
+  ${mobile} {
+    flex-direction: column;
+    div {
+      margin-bottom: 20px;
+      a {
+        font-size: 30px;
+      }
+      p {
+        font-size: 20px;
+      }
     }
   }
 `
 export const Icons = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  margin-top: 20px;
   svg {
-    width: 35px;
-    margin-bottom: 80%;
+    width: 40px;
+    margin-bottom: 20px;
+    margin-right: 65px;
+    transition: all ease 0.25s;
+    :hover {
+      transform: scale(1.2);
+    }
+  }
+  ${tablet} {
+    margin-left: 10px;
   }
 `

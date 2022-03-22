@@ -31,6 +31,7 @@ export const Content = styled.section`
   /* background-color: red; */
   ${tablet} {
     width: 768px;
+    margin-left: 10px;
   }
 `
 export const Logo = styled.div`
