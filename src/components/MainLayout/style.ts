@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import * as basicStyle from '../../styles/basic-styles'
+import { tablet, mobile } from '../../styles/basic-styles'
 
 export const MainContainer = styled.main`
   /* background-color: red; */
@@ -14,11 +14,11 @@ export const Content = styled.section`
   flex-direction: column;
   justify-content: center;
   width: 1016px;
-  ${basicStyle.tablet} {
+  ${tablet} {
     width: 768px;
   }
-  ${basicStyle.mobile} {
+  ${mobile} {
     width: 100vw;
-    padding: 65px 0 0 10px;
+    padding: 80px 0 0 10px;
   }
 `

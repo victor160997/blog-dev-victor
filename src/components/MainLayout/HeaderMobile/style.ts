@@ -69,6 +69,7 @@ export const Menu = styled.section<MenuProps>`
   transition: all ease 0.5s;
   position: fixed;
   height: 100vh;
+  top: 80px;
   width: 70vw;
   background-color: ${yellow};
   right: ${({ open }) => open ? '30vw' : '140vw'};
@@ -85,6 +86,7 @@ export const Menu = styled.section<MenuProps>`
     border-bottom: solid ${gray2} 2px;
   }
 `
+
 export const Logo = styled.div`
   background: url('/dev-victor.png');
   background-size: cover;
