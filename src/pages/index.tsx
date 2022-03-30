@@ -9,12 +9,52 @@ export default function Home({ posts }) {
         <title>Home</title>
       </Head>
       <Style.Teste>
-        <div>
+        {/* <div>
           <span>Hey 👏 </span>
           <h1>Welcome to my</h1>
           <h1><span>Portfolio </span>&<span> Blog</span></h1>
         </div>
-        <img src="/avatarpc.png" alt="" />
+        <img src="/avatarpc.png" alt="" /> */}
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
+        <h1>batata</h1>
       </Style.Teste>
     </MainLayout>
   )
