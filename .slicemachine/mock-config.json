@@ -1,0 +1,38 @@
+{
+  "slices": {
+    "Blog": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Home": {
+      "default": {
+        "primary": {}
+      }
+    }
+  },
+  "_cts": {
+    "post": {},
+    "title-home": {
+      "title": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
+  }
+}

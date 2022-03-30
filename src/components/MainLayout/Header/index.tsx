@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <Style.Header>
       <Style.Content>
-        <Style.Logo />
+        <a href="/" target="_blank"><Style.Logo /></a>
         <Style.Nav router={pathname}>
           <NextLink href="/">Home</NextLink>
           <NextLink href="/projects">Projects</NextLink>

@@ -10,6 +10,8 @@ export const gray2 = '#29292E'
 
 export const blue = '#38D7FF'
 
+export const cyan = '#61dafb'
+
 export const tablet = '@media screen and (max-width: 1015px)'
 export const mobile = '@media screen and (max-width: 767px)'
 export const desktopEtablet = '@media screen and (min-width: 767px)'

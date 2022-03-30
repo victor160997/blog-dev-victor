@@ -1,0 +1,131 @@
+{
+  "slices": {
+    "components": {
+      "blog": {
+        "library": "slices",
+        "id": "blog",
+        "name": "Blog",
+        "description": "Blog",
+        "model": {
+          "id": "blog",
+          "type": "SharedSlice",
+          "name": "Blog",
+          "description": "Blog",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Blog",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "Subtitle": {
+                  "config": {
+                    "label": "Subtitle",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature",
+                    "allowTargetBlank": false,
+                    "multi": "paragraph"
+                  }
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "blog",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Incentivize dot-com systems",
+                  "spans": []
+                }
+              ],
+              "Subtitle": [
+                {
+                  "type": "paragraph",
+                  "text": "Esse excepteur Lorem velit cillum duis adipisicing occaecat amet exercitation veniam aliqua nulla et enim veniam. Id duis anim elit duis velit consectetur elit eu consequat mollit excepteur excepteur. Non excepteur occaecat nostrud aliqua reprehenderit aute.",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Eu enim officia velit enim pariatur Lorem exercitation quis. Pariatur in nostrud cillum elit proident incididunt ullamco laboris velit velit aliquip labore est anim enim. Mollit non sint reprehenderit sint labore amet aliqua cupidatat ea adipisicing occaecat tempor officia.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "home": {
+        "library": "slices",
+        "id": "home",
+        "name": "Home",
+        "description": "Home",
+        "model": {
+          "id": "home",
+          "type": "SharedSlice",
+          "name": "Home",
+          "description": "Home",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Home",
+              "primary": {},
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "home",
+            "items": [],
+            "primary": {}
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      }
+    }
+  }
+}

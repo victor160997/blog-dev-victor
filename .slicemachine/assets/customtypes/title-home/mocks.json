@@ -1,0 +1,23 @@
+{
+  "id": "6dab530e-045b-47c4-a083-28c4381f16fb",
+  "uid": "atque-aut-ea",
+  "type": "title-home",
+  "data": {
+    "victor-image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
+    },
+    "title": [
+      {
+        "type": "paragraph",
+        "text": "In Lorem incididunt cupidatat. Dolore sint Lorem adipisicing officia commodo. Nisi sint veniam ullamco.",
+        "spans": []
+      }
+    ]
+  }
+}
