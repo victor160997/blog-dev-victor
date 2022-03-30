@@ -4,7 +4,6 @@ import { cyan } from '../basic-styles'
 export const Teste = styled.div`
   /* background-color: green; */
   width: 100%;
-  display: flex;
   padding-top: 15px;
   padding-bottom: 15px;
   h1 {
