@@ -56,7 +56,10 @@ export const Teste = styled.div`
       }
 
       section {
-        > button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button:nth-child(1) {
           margin-right: 1.5rem;
         }
       }
