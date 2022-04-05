@@ -5,7 +5,7 @@ export const Teste = styled.div`
   /* background-color: green; */
   background: linear-gradient(-170deg, rgba(97, 218, 251, 0.7) 30%, transparent 65%) no-repeat;
   /* background-size: cover; */
-  height: 370px;
+  height: fit-content;
   width: 100vw;
   padding-bottom: 15px;
   padding-top: 15px;
@@ -18,6 +18,7 @@ export const Teste = styled.div`
   }
   h3 {
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     font-size: 25px;
     font-family: Roboto;
     color: white;
@@ -51,6 +52,12 @@ export const Teste = styled.div`
 
         span {
           color: ${cyan};
+        }
+      }
+
+      section {
+        > button {
+          margin-right: 1.5rem;
         }
       }
     }
