@@ -57,7 +57,7 @@ export const Teste = styled.div`
 
       section {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         button:nth-child(1) {
           margin-right: 1.5rem;
@@ -116,6 +116,9 @@ export const Teste = styled.div`
         h1 {
           font-size: 2.5rem;
           line-height: 1.2rem;
+        }
+        section {
+          justify-content: center;
         }
       }
     }
