@@ -5,7 +5,7 @@ export const MainContainer = styled.main`
   /* background-color: red; */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 `
 export const Content = styled.section`
   /* background-color: blue; */
@@ -13,12 +13,12 @@ export const Content = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 1016px;
+  width: 100%;
   ${tablet} {
     width: 768px;
   }
   ${mobile} {
     width: 100vw;
-    padding: 80px 0 0 10px;
+    padding: 80px 0 0 0px;
   }
 `
